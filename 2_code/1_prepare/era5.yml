@@ -1,0 +1,75 @@
+root: p:/wflow_global/hydromt
+era5:
+  crs: 4326
+  data_type: RasterDataset
+  driver: zarr
+  kwargs:
+    chunks: auto
+  meta:
+    category: meteo
+  path: meteo/era5_daily.zarr
+  rename:
+    msl: press_msl
+    ssrd: kin
+    t2m: temp
+    tisr: kout
+    tmax: temp_max
+    tmin: temp_min
+    tp: precip
+  unit_add:
+    temp: -273.15
+    temp_max: -273.15
+    temp_min: -273.15
+  unit_mult:
+    kin: 0.000277778
+    kout: 0.000277778
+    press_msl: 0.01
+era5_hourly:
+  crs: 4326
+  data_type: RasterDataset
+  driver: zarr
+  kwargs:
+    chunks: auto
+  meta:
+    category: meteo
+    history: Extracted from Copernicus Climate Data Store
+    paper_doi: 10.1002/qj.3803
+    paper_ref: Hersbach et al. (2019)
+    source_license: https://cds.climate.copernicus.eu/cdsapp/#!/terms/licence-to-use-copernicus-products
+    source_url: https://doi.org/10.24381/cds.bd0915c6
+    source_version: ERA5 hourly data on pressure levels
+  path: meteo/era5.zarr
+  rename:
+    msl: press_msl
+    ssrd: kin
+    t2m: temp
+    tisr: kout
+    tp: precip
+  unit_add:
+    temp: -273.15
+  unit_mult:
+    kin: 0.000277778
+    kout: 0.000277778
+    precip: 1000
+    press_msl: 0.01
+era5_orography:
+  crs: 4326
+  data_type: RasterDataset
+  driver: netcdf
+  kwargs:
+    chunks:
+      latitude: 120
+      longitude: 125
+  meta:
+    category: meteo
+    history: Extracted from Copernicus Climate Data Store
+    paper_doi: 10.1002/qj.3803
+    paper_ref: Hersbach et al. (2019)
+    source_license: https://cds.climate.copernicus.eu/cdsapp/#!/terms/licence-to-use-copernicus-products
+    source_url: https://doi.org/10.24381/cds.bd0915c6
+    source_version: ERA5 hourly data on pressure levels
+  path: meteo/era5/meta/era5_orography_2018.nc
+  rename:
+    z: elevtn
+  unit_mult:
+    elevtn: 0.10197162129779283

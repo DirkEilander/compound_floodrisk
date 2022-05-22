@@ -1,0 +1,50 @@
+name: compound_risk
+
+channels:
+  - conda-forge
+
+# note that these are the developer dependencies,
+# if you only want the user dependencies, see
+# install_requires in setup.py
+dependencies:
+  - affine
+  - click
+  - bottleneck
+  - cartopy 
+  - cycler
+  - dask
+  - descartes 
+  - entrypoints
+  - flit>=3.2
+  - fonttools
+  - gdal==3.4.1
+  - geopandas>=0.10
+  - hydromt
+  - hydromt_sfincs
+  - hydromt_wflow
+  - jupyter
+  - kiwisolver
+  - netcdf4
+  - matplotlib 
+  - numba
+  - numpy
+  - openpyxl
+  - packaging
+  - pandas
+  - pillow
+  - pip
+  - pyflwdir==0.5.5
+  - pygeos>=0.8
+  - python==3.9
+  - python-dateutil
+  - rasterio
+  - requests
+  - rioxarray
+  - scipy
+  - toml
+  - xarray
+  - zarr
+  - pip:
+    - matplotlib_scalebar
+    - pyvinecopulib
+    - hydroengine
