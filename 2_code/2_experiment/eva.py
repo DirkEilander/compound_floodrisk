@@ -24,6 +24,51 @@ _DISTS = {
     "BM": ["gumb", "gev"],
 }
 
+##
+
+from scipy.interpolate import interp1d
+from scipy.stats import gaussian_kde
+
+class emperical_dist(object):
+    def __init__(self, data, nyears):
+        self.data = np.sort(data)[::-1]  # descending
+        nevents = data.size
+        self.freq = np.arange(1,nevents+1)/(nevents+1)*(nevents/nyears)
+        self.data = self.data[self.freq<1]
+        self.freq = self.freq[self.freq<1]
+
+    def ppf(self, q):
+        return interp1d(
+            1-self.freq, 
+            self.data, 
+            bounds_error = False, 
+            fill_value=(self.data[-1], self.data[0])
+        )(q)
+        
+    def pdf(self, x, **kwargs):
+        return gaussian_kde(self.data, **kwargs)(x)
+
+    def sf(self, x):
+        return interp1d(
+            self.data,
+            self.freq,
+            bounds_error = False, 
+            fill_value=(self.freq[-1], self.freq[0])
+        )(x)
+
+class rps_dist(object):
+    def __init__(self, rps, rvs):
+        self.rps = rps
+        self.rvs = rvs
+
+    def ppf(self, q):
+        return interp1d(
+            1-1/self.rps,
+            self.rvs,
+            bounds_error = False, 
+            fill_value=(self.rvs[-1], self.rvs[0])
+        )(q)
+
 ## high level methods
 
 def eva_idf(

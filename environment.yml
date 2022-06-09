@@ -21,7 +21,6 @@ dependencies:
   - geopandas>=0.10
   - hydromt
   - hydromt_sfincs
-  - hydromt_wflow
   - jupyter
   - kiwisolver
   - netcdf4
@@ -47,4 +46,3 @@ dependencies:
   - pip:
     - matplotlib_scalebar
     - pyvinecopulib
-    - hydroengine
