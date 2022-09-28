@@ -2,15 +2,15 @@
 compound flood modelling
 ------------------------
 
-This repository contains all scripts and necessary data to reproduce the local SFINCS model simulations and analysis performed for:
+This repository contains all scripts and necessary data to reproduce the simulations and analysis performed for:
 
-Eilander, D., Couasnon, A., Muis, S., Ikeuchi, H., Dullaart, J., Yamazaki, D., Winsemius, H. C., & Ward, P. J. (submitted). 
-A globally-applicable framework for compound flood hazard modeling. Natural Hazards and Earth System Sciences Discussions.
+Eilander, Dirk; Couasnon, Anaïs; Sperna Weiland; Frederiek C., Ligtvoet, Willem; Bouwman, Arno; Winsemius, Hessel C.; Ward, Philip J. (submitted). 
+Modeling compound flood risk and risk reduction using a globally-applicable framework: A case study in the Sofala region. Natural Hazards and Earth System Sciences Discussions.
 
 Getting started
 ---------------
 
-1. Clone or download the repository and unzip all zip files in the "1_data" and "3_model/CMF" folders.
+1. Clone or download the repository and unzip all zip files in the "1_data" folder.
 2. Install a conda environment based on the environment.yml file within this repository, see code below.
 3. Then, follow the notebooks contained in the 2_code folder.
 
@@ -27,14 +27,10 @@ Repository outline
   > 1_data
     > 1_static
     > 2_forcing
-    > 3_eo_rapid
-    > 4_observations
   > 2_code
-    > 1_prepare (not required / only executable from with the Deltares network)
+    > 1_prepare
     > 2_experiment
-    > 3_postprocess
-    > 4_analysis 
   > 3_models
-    > SFINCS (created by scripts in 2_code/2_experiment)
-    > CMF
-  > 4_results (empty; results from 2_code/4_analysis)
+    > sfincs (contains only base model)
+    > fiat
+  > 4_results (empty)

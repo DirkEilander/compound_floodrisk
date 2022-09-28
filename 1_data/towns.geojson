@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32736" } },
+"features": [
+{ "type": "Feature", "properties": { "index": "Mefambisse", "y": -19.539353045197789, "x": 34.629741259143714 }, "geometry": { "type": "Point", "coordinates": [ 670987.895891751977615, 7838679.085375914350152 ] } },
+{ "type": "Feature", "properties": { "index": "Buzi", "y": -19.883677, "x": 34.599003 }, "geometry": { "type": "Point", "coordinates": [ 667403.413413566886447, 7800596.288173485547304 ] } },
+{ "type": "Feature", "properties": { "index": "Beira", "y": -19.825007644673512, "x": 34.864833774439838 }, "geometry": { "type": "Point", "coordinates": [ 695312.752861719112843, 7806804.916274763643742 ] } }
+]
+}

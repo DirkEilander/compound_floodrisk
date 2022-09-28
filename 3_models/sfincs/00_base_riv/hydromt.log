@@ -1,0 +1,189 @@
+2022-05-05 21:02:38,580 - update - log - DEBUG - Writing log messages to new file \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv\hydromt.log.
+2022-05-05 21:02:38,581 - update - log - INFO - HydroMT version: 0.4.6.dev
+2022-05-05 21:02:38,582 - update - main - INFO - Updating sfincs model at \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base (r).
+2022-05-05 21:02:38,582 - update - main - INFO - Output dir: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv
+2022-05-05 21:02:38,583 - update - main - INFO - Additional data sources: ('\\\\storage009.directory.intra\\11205283-hydromt-floodmodelling\\compound_floodrisk_modelling\\1_data\\1_static\\static_data.yml',)
+2022-05-05 21:02:38,583 - update - main - INFO - User settings:
+2022-05-05 21:02:38,630 - update - model_plugins - DEBUG - Loaded model plugin 'sfincs = hydromt_sfincs.sfincs.SfincsModel' (0.2.1)
+2022-05-05 21:02:38,630 - update - model_api - INFO - Initializing sfincs model from hydromt_sfincs (v0.2.1).
+2022-05-05 21:02:38,680 - update - data_adapter - WARNING - Overwriting data source gcn250.
+2022-05-05 21:02:38,681 - update - data_adapter - WARNING - Overwriting data source grwl_mask.
+2022-05-05 21:02:38,682 - update - data_adapter - WARNING - Overwriting data source merit_hydro.
+2022-05-05 21:02:38,684 - update - data_adapter - WARNING - Overwriting data source osm_coastlines.
+2022-05-05 21:02:38,684 - update - data_adapter - WARNING - Overwriting data source vito.
+2022-05-05 21:02:39,632 - update - log - DEBUG - Appending log messages to file \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv\hydromt.log.
+2022-05-05 21:02:39,633 - update - model_api - INFO - setup_river_bathymetry.river_geom_fn: None
+2022-05-05 21:02:39,634 - update - model_api - INFO - setup_river_bathymetry.river_mask_fn: grwl_mask
+2022-05-05 21:02:39,635 - update - model_api - INFO - setup_river_bathymetry.qbankfull_fn: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\2_forcing\cama_discharge_beira_daily_qbf.geojson
+2022-05-05 21:02:39,636 - update - model_api - INFO - setup_river_bathymetry.rivdph_method: gvf
+2022-05-05 21:02:39,636 - update - model_api - INFO - setup_river_bathymetry.rivwth_method: mask
+2022-05-05 21:02:39,637 - update - model_api - INFO - setup_river_bathymetry.river_upa: 100
+2022-05-05 21:02:39,638 - update - model_api - INFO - setup_river_bathymetry.river_len: 1000
+2022-05-05 21:02:39,638 - update - model_api - INFO - setup_river_bathymetry.min_rivwth: 50.0
+2022-05-05 21:02:39,640 - update - model_api - INFO - setup_river_bathymetry.min_rivdph: 1.0
+2022-05-05 21:02:39,641 - update - model_api - INFO - setup_river_bathymetry.rivbank: True
+2022-05-05 21:02:39,642 - update - model_api - INFO - setup_river_bathymetry.rivbankq: 5
+2022-05-05 21:02:39,642 - update - model_api - INFO - setup_river_bathymetry.segment_length: 3000.0
+2022-05-05 21:02:39,643 - update - model_api - INFO - setup_river_bathymetry.smooth_length: 10000.0
+2022-05-05 21:02:39,645 - update - model_api - INFO - setup_river_bathymetry.constrain_rivbed: True
+2022-05-05 21:02:39,647 - update - model_api - INFO - setup_river_bathymetry.constrain_estuary: True
+2022-05-05 21:02:39,648 - update - model_api - INFO - setup_river_bathymetry.dig_river_d4: True
+2022-05-05 21:02:39,649 - update - model_api - INFO - setup_river_bathymetry.plot_riv_profiles: 2
+2022-05-05 21:02:41,041 - update - data_adapter - INFO - DataCatalog: Getting cama_discharge_beira_daily_qbf GeoDataFrame vector data from \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\2_forcing\cama_discharge_beira_daily_qbf.geojson
+2022-05-05 21:02:41,046 - update - data_adapter - INFO - GeoDataFrame: Read vector data and clip to geom (epsg:32736) [639000.000, 7774000.000, 704900.000, 7865400.000].
+2022-05-05 21:02:41,078 - update - data_adapter - INFO - DataCatalog: Getting grwl_mask RasterDataset raster data from \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\1_static\grwl_mask.tif
+2022-05-05 21:02:41,175 - update - data_adapter - DEBUG - RasterDataset: Clip with geom - [34.323, -20.126, 34.956, -19.295]
+2022-05-05 21:02:49,486 - update - bathymetry - INFO - 4/4 qbankfull boundary points set.
+2022-05-05 21:02:52,257 - update - bathymetry - INFO - Deriving bankfull river surface elevation from its banks.
+2022-05-05 21:03:01,424 - update - bathymetry - INFO - Deriving river segment average width from permanent water mask.
+2022-05-05 21:03:01,628 - update - bathymetry - INFO - Smoothing river width (n=2).
+2022-05-05 21:03:05,722 - update - bathymetry - DEBUG - Burn bedlevel values into DEM.
+2022-05-05 21:03:05,751 - update - bathymetry - DEBUG - Interpolate bedlevel values
+2022-05-05 21:03:07,028 - update - bathymetry - DEBUG - Correct for D4 connectivity bed level
+2022-05-05 21:03:14,201 - update - model_api - INFO - plot_basemap.fn_out: basemap.png
+2022-05-05 21:03:14,202 - update - model_api - INFO - plot_basemap.variable: dep
+2022-05-05 21:03:14,203 - update - model_api - INFO - plot_basemap.shaded: True
+2022-05-05 21:03:14,205 - update - model_api - INFO - plot_basemap.plot_bounds: True
+2022-05-05 21:03:14,207 - update - model_api - INFO - plot_basemap.plot_region: False
+2022-05-05 21:03:14,207 - update - model_api - INFO - plot_basemap.plot_geoms: True
+2022-05-05 21:03:14,208 - update - model_api - INFO - plot_basemap.bmap: sat
+2022-05-05 21:03:14,209 - update - model_api - INFO - plot_basemap.zoomlevel: 11
+2022-05-05 21:03:14,212 - update - model_api - INFO - plot_basemap.figsize: None
+2022-05-05 21:03:14,212 - update - model_api - INFO - plot_basemap.geoms: None
+2022-05-05 21:03:14,213 - update - model_api - INFO - plot_basemap.geom_kwargs: {}
+2022-05-05 21:03:14,214 - update - model_api - INFO - plot_basemap.legend_kwargs: {}
+2022-05-05 21:03:19,021 - update - sfincs - INFO - Writing model data to \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv
+2022-05-05 21:03:19,175 - update - sfincs - DEBUG - Write binary map indices based on mask.
+2022-05-05 21:03:19,201 - update - sfincs - DEBUG - Write binary map files: ['dep', 'msk', 'scs', 'manning'].
+2022-05-05 21:03:19,280 - update - sfincs - INFO - Write raster file(s) for staticmaps to 'gis' subfolder
+2022-05-05 21:03:20,050 - update - sfincs - INFO - Write staticgeom files
+2022-05-05 21:03:20,056 - update - sfincs - INFO - Write vector file(s) for staticgeoms to 'gis' subfolder
+2022-05-05 21:03:20,190 - update - sfincs - INFO - Write forcing files
+2022-05-05 21:03:20,225 - update - sfincs - INFO - Write vector file(s) for forcing.dis to 'gis' subfolder
+2022-05-05 21:03:20,279 - update - model_api - INFO - Writing model config to \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv\sfincs.inp
+2022-05-06 00:27:10,927 - update - log - DEBUG - Appending log messages to file \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv\hydromt.log.
+2022-05-06 00:27:10,935 - update - log - INFO - HydroMT version: 0.4.6.dev
+2022-05-06 00:27:10,936 - update - main - INFO - Updating sfincs model at \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base (r).
+2022-05-06 00:27:10,936 - update - main - INFO - Output dir: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv
+2022-05-06 00:27:10,937 - update - main - INFO - Additional data sources: ('\\\\storage009.directory.intra\\11205283-hydromt-floodmodelling\\compound_floodrisk_modelling\\1_data\\1_static\\static_data.yml',)
+2022-05-06 00:27:10,938 - update - main - INFO - User settings:
+2022-05-06 00:27:10,968 - update - model_plugins - DEBUG - Loaded model plugin 'sfincs = hydromt_sfincs.sfincs.SfincsModel' (0.2.1)
+2022-05-06 00:27:10,970 - update - model_api - INFO - Initializing sfincs model from hydromt_sfincs (v0.2.1).
+2022-05-06 00:27:11,019 - update - data_adapter - WARNING - Overwriting data source gcn250.
+2022-05-06 00:27:11,020 - update - data_adapter - WARNING - Overwriting data source grwl_mask.
+2022-05-06 00:27:11,021 - update - data_adapter - WARNING - Overwriting data source merit_hydro.
+2022-05-06 00:27:11,022 - update - data_adapter - WARNING - Overwriting data source osm_coastlines.
+2022-05-06 00:27:11,023 - update - data_adapter - WARNING - Overwriting data source vito.
+2022-05-06 00:27:12,198 - update - log - DEBUG - Appending log messages to file \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv\hydromt.log.
+2022-05-06 00:27:12,203 - update - model_api - INFO - setup_river_bathymetry.river_geom_fn: None
+2022-05-06 00:27:12,204 - update - model_api - INFO - setup_river_bathymetry.river_mask_fn: grwl_mask
+2022-05-06 00:27:12,205 - update - model_api - INFO - setup_river_bathymetry.qbankfull_fn: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\2_forcing\cama_discharge_beira_daily_qbf.geojson
+2022-05-06 00:27:12,206 - update - model_api - INFO - setup_river_bathymetry.rivdph_method: gvf
+2022-05-06 00:27:12,209 - update - model_api - INFO - setup_river_bathymetry.rivwth_method: mask
+2022-05-06 00:27:12,211 - update - model_api - INFO - setup_river_bathymetry.river_upa: 100
+2022-05-06 00:27:12,212 - update - model_api - INFO - setup_river_bathymetry.river_len: 1000
+2022-05-06 00:27:12,213 - update - model_api - INFO - setup_river_bathymetry.min_rivwth: 50.0
+2022-05-06 00:27:12,214 - update - model_api - INFO - setup_river_bathymetry.min_rivdph: 1.0
+2022-05-06 00:27:12,215 - update - model_api - INFO - setup_river_bathymetry.rivbank: True
+2022-05-06 00:27:12,216 - update - model_api - INFO - setup_river_bathymetry.rivbankq: 5
+2022-05-06 00:27:12,217 - update - model_api - INFO - setup_river_bathymetry.segment_length: 3000.0
+2022-05-06 00:27:12,223 - update - model_api - INFO - setup_river_bathymetry.smooth_length: 10000.0
+2022-05-06 00:27:12,224 - update - model_api - INFO - setup_river_bathymetry.constrain_rivbed: True
+2022-05-06 00:27:12,225 - update - model_api - INFO - setup_river_bathymetry.constrain_estuary: True
+2022-05-06 00:27:12,227 - update - model_api - INFO - setup_river_bathymetry.dig_river_d4: True
+2022-05-06 00:27:12,228 - update - model_api - INFO - setup_river_bathymetry.plot_riv_profiles: 2
+2022-05-06 00:27:13,575 - update - data_adapter - INFO - DataCatalog: Getting cama_discharge_beira_daily_qbf GeoDataFrame vector data from \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\2_forcing\cama_discharge_beira_daily_qbf.geojson
+2022-05-06 00:27:13,582 - update - data_adapter - INFO - GeoDataFrame: Read vector data and clip to geom (epsg:32736) [639000.000, 7774000.000, 704900.000, 7865400.000].
+2022-05-06 00:27:13,617 - update - data_adapter - INFO - DataCatalog: Getting grwl_mask RasterDataset raster data from \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\1_static\grwl_mask.tif
+2022-05-06 00:27:13,687 - update - data_adapter - DEBUG - RasterDataset: Clip with geom - [34.323, -20.126, 34.956, -19.295]
+2022-05-06 00:27:23,697 - update - bathymetry - INFO - 4/4 qbankfull boundary points set.
+2022-05-06 00:27:26,303 - update - bathymetry - INFO - Deriving bankfull river surface elevation from its banks.
+2022-05-06 00:27:36,461 - update - bathymetry - INFO - Deriving river segment average width from permanent water mask.
+2022-05-06 00:27:36,742 - update - bathymetry - INFO - Smoothing river width (n=2).
+2022-05-06 00:27:43,251 - update - bathymetry - DEBUG - Burn bedlevel values into DEM.
+2022-05-06 00:27:43,296 - update - bathymetry - DEBUG - Interpolate bedlevel values
+2022-05-06 00:27:44,938 - update - bathymetry - DEBUG - Correct for D4 connectivity bed level
+2022-05-06 00:27:55,659 - update - model_api - INFO - plot_basemap.fn_out: basemap.png
+2022-05-06 00:27:55,661 - update - model_api - INFO - plot_basemap.variable: dep
+2022-05-06 00:27:55,663 - update - model_api - INFO - plot_basemap.shaded: True
+2022-05-06 00:27:55,664 - update - model_api - INFO - plot_basemap.plot_bounds: True
+2022-05-06 00:27:55,665 - update - model_api - INFO - plot_basemap.plot_region: False
+2022-05-06 00:27:55,667 - update - model_api - INFO - plot_basemap.plot_geoms: True
+2022-05-06 00:27:55,668 - update - model_api - INFO - plot_basemap.bmap: sat
+2022-05-06 00:27:55,668 - update - model_api - INFO - plot_basemap.zoomlevel: 11
+2022-05-06 00:27:55,669 - update - model_api - INFO - plot_basemap.figsize: None
+2022-05-06 00:27:55,670 - update - model_api - INFO - plot_basemap.geoms: None
+2022-05-06 00:27:55,671 - update - model_api - INFO - plot_basemap.geom_kwargs: {}
+2022-05-06 00:27:55,672 - update - model_api - INFO - plot_basemap.legend_kwargs: {}
+2022-05-06 00:28:01,930 - update - sfincs - INFO - Writing model data to \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv
+2022-05-06 00:28:02,119 - update - sfincs - DEBUG - Write binary map indices based on mask.
+2022-05-06 00:28:02,164 - update - sfincs - DEBUG - Write binary map files: ['dep', 'msk', 'scs', 'manning'].
+2022-05-06 00:28:02,586 - update - sfincs - INFO - Write raster file(s) for staticmaps to 'gis' subfolder
+2022-05-06 00:28:03,618 - update - sfincs - INFO - Write staticgeom files
+2022-05-06 00:28:03,624 - update - sfincs - INFO - Write vector file(s) for staticgeoms to 'gis' subfolder
+2022-05-06 00:28:03,843 - update - sfincs - INFO - Write forcing files
+2022-05-06 00:28:03,903 - update - sfincs - INFO - Write vector file(s) for forcing.dis to 'gis' subfolder
+2022-05-06 00:28:04,016 - update - model_api - INFO - Writing model config to \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv\sfincs.inp
+2022-05-06 00:31:01,954 - update - log - DEBUG - Appending log messages to file \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv\hydromt.log.
+2022-05-06 00:31:01,956 - update - log - INFO - HydroMT version: 0.4.6.dev
+2022-05-06 00:31:01,957 - update - main - INFO - Updating sfincs model at \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base (r).
+2022-05-06 00:31:01,958 - update - main - INFO - Output dir: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv
+2022-05-06 00:31:01,959 - update - main - INFO - Additional data sources: ('\\\\storage009.directory.intra\\11205283-hydromt-floodmodelling\\compound_floodrisk_modelling\\1_data\\1_static\\static_data.yml',)
+2022-05-06 00:31:01,959 - update - main - INFO - User settings:
+2022-05-06 00:31:01,984 - update - model_plugins - DEBUG - Loaded model plugin 'sfincs = hydromt_sfincs.sfincs.SfincsModel' (0.2.1)
+2022-05-06 00:31:01,986 - update - model_api - INFO - Initializing sfincs model from hydromt_sfincs (v0.2.1).
+2022-05-06 00:31:02,030 - update - data_adapter - WARNING - Overwriting data source gcn250.
+2022-05-06 00:31:02,031 - update - data_adapter - WARNING - Overwriting data source grwl_mask.
+2022-05-06 00:31:02,032 - update - data_adapter - WARNING - Overwriting data source merit_hydro.
+2022-05-06 00:31:02,033 - update - data_adapter - WARNING - Overwriting data source osm_coastlines.
+2022-05-06 00:31:02,033 - update - data_adapter - WARNING - Overwriting data source vito.
+2022-05-06 00:31:02,855 - update - log - DEBUG - Appending log messages to file \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv\hydromt.log.
+2022-05-06 00:31:02,857 - update - model_api - INFO - setup_river_bathymetry.river_geom_fn: None
+2022-05-06 00:31:02,859 - update - model_api - INFO - setup_river_bathymetry.river_mask_fn: grwl_mask
+2022-05-06 00:31:02,860 - update - model_api - INFO - setup_river_bathymetry.qbankfull_fn: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\2_forcing\cama_discharge_beira_daily_qbf.geojson
+2022-05-06 00:31:02,862 - update - model_api - INFO - setup_river_bathymetry.rivdph_method: gvf
+2022-05-06 00:31:02,863 - update - model_api - INFO - setup_river_bathymetry.rivwth_method: mask
+2022-05-06 00:31:02,865 - update - model_api - INFO - setup_river_bathymetry.river_upa: 100
+2022-05-06 00:31:02,866 - update - model_api - INFO - setup_river_bathymetry.river_len: 1000
+2022-05-06 00:31:02,868 - update - model_api - INFO - setup_river_bathymetry.min_rivwth: 50.0
+2022-05-06 00:31:02,869 - update - model_api - INFO - setup_river_bathymetry.min_rivdph: 1.0
+2022-05-06 00:31:02,870 - update - model_api - INFO - setup_river_bathymetry.rivbank: True
+2022-05-06 00:31:02,872 - update - model_api - INFO - setup_river_bathymetry.rivbankq: 5
+2022-05-06 00:31:02,872 - update - model_api - INFO - setup_river_bathymetry.segment_length: 3000.0
+2022-05-06 00:31:02,873 - update - model_api - INFO - setup_river_bathymetry.smooth_length: 10000.0
+2022-05-06 00:31:02,874 - update - model_api - INFO - setup_river_bathymetry.constrain_rivbed: True
+2022-05-06 00:31:02,875 - update - model_api - INFO - setup_river_bathymetry.constrain_estuary: True
+2022-05-06 00:31:02,875 - update - model_api - INFO - setup_river_bathymetry.dig_river_d4: True
+2022-05-06 00:31:02,876 - update - model_api - INFO - setup_river_bathymetry.plot_riv_profiles: 2
+2022-05-06 00:31:04,351 - update - data_adapter - INFO - DataCatalog: Getting cama_discharge_beira_daily_qbf GeoDataFrame vector data from \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\2_forcing\cama_discharge_beira_daily_qbf.geojson
+2022-05-06 00:31:04,356 - update - data_adapter - INFO - GeoDataFrame: Read vector data and clip to geom (epsg:32736) [639000.000, 7774000.000, 704900.000, 7865400.000].
+2022-05-06 00:31:04,387 - update - data_adapter - INFO - DataCatalog: Getting grwl_mask RasterDataset raster data from \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\1_static\grwl_mask.tif
+2022-05-06 00:31:04,450 - update - data_adapter - DEBUG - RasterDataset: Clip with geom - [34.323, -20.126, 34.956, -19.295]
+2022-05-06 00:31:12,965 - update - bathymetry - INFO - 4/4 qbankfull boundary points set.
+2022-05-06 00:31:15,025 - update - bathymetry - INFO - Deriving bankfull river surface elevation from its banks.
+2022-05-06 00:31:22,517 - update - bathymetry - INFO - Deriving river segment average width from permanent water mask.
+2022-05-06 00:31:22,724 - update - bathymetry - INFO - Smoothing river width (n=2).
+2022-05-06 00:31:27,946 - update - bathymetry - DEBUG - Burn bedlevel values into DEM.
+2022-05-06 00:31:27,976 - update - bathymetry - DEBUG - Interpolate bedlevel values
+2022-05-06 00:31:29,271 - update - bathymetry - DEBUG - Correct for D4 connectivity bed level
+2022-05-06 00:31:36,116 - update - model_api - INFO - plot_basemap.fn_out: basemap.png
+2022-05-06 00:31:36,118 - update - model_api - INFO - plot_basemap.variable: dep
+2022-05-06 00:31:36,119 - update - model_api - INFO - plot_basemap.shaded: True
+2022-05-06 00:31:36,119 - update - model_api - INFO - plot_basemap.plot_bounds: True
+2022-05-06 00:31:36,120 - update - model_api - INFO - plot_basemap.plot_region: False
+2022-05-06 00:31:36,121 - update - model_api - INFO - plot_basemap.plot_geoms: True
+2022-05-06 00:31:36,122 - update - model_api - INFO - plot_basemap.bmap: sat
+2022-05-06 00:31:36,122 - update - model_api - INFO - plot_basemap.zoomlevel: 11
+2022-05-06 00:31:36,123 - update - model_api - INFO - plot_basemap.figsize: None
+2022-05-06 00:31:36,124 - update - model_api - INFO - plot_basemap.geoms: None
+2022-05-06 00:31:36,125 - update - model_api - INFO - plot_basemap.geom_kwargs: {}
+2022-05-06 00:31:36,126 - update - model_api - INFO - plot_basemap.legend_kwargs: {}
+2022-05-06 00:31:41,087 - update - sfincs - INFO - Writing model data to \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv
+2022-05-06 00:31:41,249 - update - sfincs - DEBUG - Write binary map indices based on mask.
+2022-05-06 00:31:41,589 - update - sfincs - DEBUG - Write binary map files: ['dep', 'msk', 'scs', 'manning'].
+2022-05-06 00:31:42,010 - update - sfincs - INFO - Write raster file(s) for staticmaps to 'gis' subfolder
+2022-05-06 00:31:42,736 - update - sfincs - INFO - Write staticgeom files
+2022-05-06 00:31:42,745 - update - sfincs - INFO - Write vector file(s) for staticgeoms to 'gis' subfolder
+2022-05-06 00:31:42,930 - update - sfincs - INFO - Write forcing files
+2022-05-06 00:31:42,969 - update - sfincs - INFO - Write vector file(s) for forcing.dis to 'gis' subfolder
+2022-05-06 00:31:43,030 - update - model_api - INFO - Writing model config to \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\3_models\sfincs\00_base_riv\sfincs.inp

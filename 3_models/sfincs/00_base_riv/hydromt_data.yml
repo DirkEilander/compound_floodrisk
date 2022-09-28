@@ -1,0 +1,63 @@
+cama_discharge_beira_daily_qbf:
+  data_type: GeoDataFrame
+  driver: vector
+  path: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\2_forcing\cama_discharge_beira_daily_qbf.geojson
+gcn250:
+  data_type: RasterDataset
+  driver: raster
+  meta:
+    category: soil
+    paper_doi: 10.1038/s41597-019-0155-x
+    paper_ref: Jaafar et al. (2019)
+    source_license: CC BY 4.0
+    source_url: https://doi.org/10.6084/m9.figshare.7756202.v1
+    source_version: v1
+  nodata: 255
+  path: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\1_static\gcn250\{variable}.tif
+grwl_mask:
+  data_type: RasterDataset
+  driver: raster
+  meta:
+    category: hydrography
+    paper_doi: 10.1126/science.aat0636
+    paper_ref: Allen and Pavelsky (2018)
+    source_license: CC BY 4.0
+    source_url: https://doi.org/10.5281/zenodo.1297434
+    source_version: 1.01
+  nodata: 0
+  path: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\1_static\grwl_mask.tif
+merit_hydro:
+  crs: 4326
+  data_type: RasterDataset
+  driver: raster
+  meta:
+    category: topography
+    paper_doi: 10.1029/2019WR024873
+    paper_ref: Yamazaki et al. (2019)
+    source_license: CC-BY-NC 4.0 or ODbL 1.0
+    source_url: http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro
+    source_version: 1.0
+  path: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\1_static\merit_hydro\{variable}.tif
+osm_coastlines:
+  crs: 4326
+  data_type: GeoDataFrame
+  driver: vector
+  meta:
+    category: geography
+    source_author: OpenStreetMap
+    source_info: OpenStreetMap coastlines water polygons, last updated 2020-01-09T05:29
+    source_license: ODbL
+    source_url: https://osmdata.openstreetmap.de/data/coastlines.html
+    source_version: 1.0
+  path: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\1_static\osm_coastlines.gpkg
+vito:
+  crs: 4326
+  data_type: RasterDataset
+  driver: raster
+  meta:
+    category: landuse
+    paper_doi: 10.5281/zenodo.3939038
+    paper_ref: Buchhorn et al (2020)
+    source_url: https://land.copernicus.eu/global/products/lc
+    source_version: v2.0.2
+  path: \\storage009.directory.intra\11205283-hydromt-floodmodelling\compound_floodrisk_modelling\1_data\1_static\vito.tif
