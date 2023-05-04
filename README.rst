@@ -4,8 +4,7 @@ compound flood modelling
 
 This repository contains all scripts and necessary data to reproduce the simulations and analysis performed for:
 
-Eilander, Dirk; Couasnon, Anaïs; Sperna Weiland; Frederiek C., Ligtvoet, Willem; Bouwman, Arno; Winsemius, Hessel C.; Ward, Philip J. (submitted). 
-Modeling compound flood risk and risk reduction using a globally-applicable framework: A case study in the Sofala region. Natural Hazards and Earth System Sciences Discussions.
+Eilander, D., Couasnon, A., Sperna Weiland, F. C., Ligtvoet, W., Bouwman, A., Winsemius, H. C., & Ward, P. J. (2022). Modeling compound flood risk and risk reduction using a globally-applicable framework: A case study in the Sofala region. In Natural Hazards and Earth System Sciences Discussions. https://doi.org/10.5194/nhess-2022-248
 
 Getting started
 ---------------
